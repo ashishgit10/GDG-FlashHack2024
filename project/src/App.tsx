@@ -15,7 +15,7 @@ import {
   Flame
 } from 'lucide-react';
 
-// Countdown Timer Component
+
 const CountdownTimer = () => {
   const [timeLeft, setTimeLeft] = React.useState({
     days: 0,
@@ -54,7 +54,7 @@ const CountdownTimer = () => {
   );
 };
 
-// FAQ Item Component
+
 const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
