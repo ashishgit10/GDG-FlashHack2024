@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  @apply bg-gray-900;
+}
+
+/* Gradient animation */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Speed lines animation */
+@keyframes speedLines {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.speed-lines::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 20px,
+    rgba(255, 165, 0, 0.1) 20px,
+    rgba(255, 165, 0, 0.1) 40px
+  );
+  animation: speedLines 2s linear infinite;
+  pointer-events: none;
+}
+
+/* Glowing effect */
+.glow-effect {
+  position: relative;
+}
+
+.glow-effect::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg, #ff4800, #ff8a00, #ffd000);
+  filter: blur(15px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.glow-effect:hover::after {
+  opacity: 0.7;
+}
+
+/* Comic style text */
+.comic-text {
+  text-shadow: 
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000;
+  letter-spacing: 1px;
+}
+
+/* Electric grid background */
+.electric-grid {
+  background-image: 
+    linear-gradient(rgba(255, 72, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 72, 0, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: center center;
+}
+
+/* Flicker animation */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+.flicker {
+  animation: flicker 2s infinite;
+}
+
+/* Speedometer animation */
+@keyframes speedometer {
+  0% { transform: rotate(-120deg); }
+  50% { transform: rotate(120deg); }
+  100% { transform: rotate(-120deg); }
+}
+
+.speedometer::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 40%;
+  background: linear-gradient(to top, #ff4800, #ff8a00);
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom;
+  animation: speedometer 4s ease-in-out infinite;
+}
