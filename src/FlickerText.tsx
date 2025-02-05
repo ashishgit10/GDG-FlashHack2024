@@ -4,8 +4,8 @@ import styled from "styled-components";
 const FlickerText: React.FC = () => {
   const text = "Flash Hack";
   const [fade] = useState<number>(0);
-  const [flickerDuration, ] = useState<number>(100);
-  
+  const [flickerDuration,] = useState<number>(100);
+
   useEffect(() => {
     const container = document.getElementById("container");
     if (!container) return;
@@ -35,7 +35,7 @@ const FlickerText: React.FC = () => {
       }
     };
 
-    const myInterval = setInterval(flickerEffect, 20);
+    const myInterval = setInterval(flickerEffect, 50);
 
     return () => clearInterval(myInterval);
   }, [fade, flickerDuration]);
@@ -43,7 +43,7 @@ const FlickerText: React.FC = () => {
   return (
     <AppContainer>
       <Container id="container"></Container>
-      
+
     </AppContainer>
   );
 };
@@ -66,8 +66,9 @@ const Container = styled.div`
 
   p {
     text-transform: uppercase;
-    font-size: 10vh;
+    font-size:70px;
     text-align: center;
+    font-weight: bold;
     margin: 0 10px;
     transition: all 0.2s ease-in-out;
   }

@@ -7,6 +7,8 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         Doto: ["Doto", "sans-serif"],
         Smooch: ["Smooch Sans"],
+        Chivo: ["Chivo"],
+
       },
     },
   },
