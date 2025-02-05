@@ -38,10 +38,10 @@ const CountdownTimer: React.FC = () => {
       {/* Responsive Grid for Countdown Boxes */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-3xl">
         {/** Days **/}
-        <div className="flex flex-col items-center bg-black/20 md:p-4 px-4 py-4 rounded-lg border border-orange-500">
+        <div className="flex flex-col items-center bg-black/10 md:p-4 px-4 py-4 rounded-lg">
           <FlipNumbers
-            height={40} // Smaller size for mobile
-            width={30}
+            height={45} // Smaller size for mobile
+            width={35}
             play={true}
             color="white"
             numbers={String(timeLeft.days).padStart(2, '0')}
@@ -50,10 +50,10 @@ const CountdownTimer: React.FC = () => {
         </div>
 
         {/** Hours **/}
-        <div className="flex flex-col items-center bg-black/20 md:p-4 px-4 py-4 rounded-lg border border-orange-500">
+        <div className="flex flex-col items-center bg-black/10 md:p-4 px-4 py-4 rounded-lg ">
           <FlipNumbers
-            height={40}
-            width={30}
+            height={45}
+            width={35}
             play={true}
             color="white"
             numbers={String(timeLeft.hours).padStart(2, '0')}
@@ -62,10 +62,10 @@ const CountdownTimer: React.FC = () => {
         </div>
 
         {/** Minutes **/}
-        <div className="flex flex-col items-center bg-black/20 md:p-4 px-4 py-4 rounded-lg border border-orange-500">
+        <div className="flex flex-col items-center bg-black/10 md:p-4 px-4 py-4 rounded-lg ">
           <FlipNumbers
-            height={40}
-            width={30}
+            height={45}
+            width={35}
             play={true}
             color="white"
             numbers={String(timeLeft.minutes).padStart(2, '0')}
@@ -74,10 +74,10 @@ const CountdownTimer: React.FC = () => {
         </div>
 
         {/** Seconds **/}
-        <div className="flex flex-col items-center bg-black/20 md:p-4 px-4 py-4 rounded-lg border border-orange-500">
+        <div className="flex flex-col items-center bg-black/10 md:p-4 px-4 py-4 rounded-lg ">
           <FlipNumbers
-            height={40}
-            width={30}
+            height={45}
+            width={35}
             play={true}
             color="white"
             numbers={String(timeLeft.seconds).padStart(2, '0')}

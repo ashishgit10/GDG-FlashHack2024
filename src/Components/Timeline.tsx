@@ -9,7 +9,7 @@ const Timeline: React.FC = () => {
         <div> <section className="py-20 relative overflow-hidden">
             <div className="absolute inset-0 electric-grid opacity-30" />
             <div className="container mx-auto px-4 relative">
-                <h2 className="text-4xl font-bold text-center mb-12 comic-text text-yellow-100">
+                <h2 className="text-4xl font-Chivo font-bold text-center mb-12 comic-text text-yellow-100">
                     Event Timeline
                 </h2>
                 <div className="max-w-4xl mx-auto">
