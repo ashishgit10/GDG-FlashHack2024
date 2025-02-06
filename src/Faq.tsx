@@ -21,7 +21,7 @@ function Faq() {
                     <ChevronDown className={`transform transition-transform text-orange-400 ${isOpen ? 'rotate-180' : ''}`} />
                 </button>
                 <div className={`overflow-hidden transition-all ${isOpen ? 'max-h-48' : 'max-h-0'}`}>
-                    <p className="pb-4 text-gray-400">{answer}</p>
+                    <p className="pb- font-Doto text-gray-100 font-bold">{answer}</p>
                 </div>
             </div>
         );

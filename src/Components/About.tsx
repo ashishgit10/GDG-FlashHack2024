@@ -15,7 +15,7 @@ const About: React.FC = () => {
                         <h2 className="text-4xl font-bold mb-6 comic-text text-yellow-100">
                             What is FlashHack?
                         </h2>
-                        <p className="text-orange-100 mb-6 font-Doto">
+                        <p className="text-orange-100 mb-6 font-bold font-Doto">
                             FlashHack is a high-intensity, AI-powered hackathon hosted by GDG On Campus RCET, designed for innovators who thrive under pressure. With just 3 hours on the clock, participants will race against time to build functional prototypes using AI tools, open-source modifications, or custom-built solutions from scratch.
                         </p>
                         <div className="grid grid-cols-2 gap-6">

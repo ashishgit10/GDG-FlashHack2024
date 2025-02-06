@@ -26,7 +26,7 @@ const Landingpage: React.FC = () => {
                     <p className="text-4xl md:text-5xl md:mb-8 font-Smooch font-bold text-black text-center comic-text">
                         Think Fast. Build Faster.
                     </p>
-                    <p className="md:text-4xl text-2xl mt-6 font-Smooch font-bold md:mb-12 text-black">
+                    <p className="md:text-4xl text-2xl font-Smooch font-bold md:mb-12 text-black">
                         3 Hour Rapid Development Hackathon
                     </p>
                     <CounterTimer />

@@ -59,24 +59,24 @@ const Timeline = () => {
       <div className="absolute inset-0 bg-cover bg-center md:bg-initial " style={{ backgroundImage: `url(${tm})` }} />
       <div className="mt-14">
 
-      <h2 className="text-3xl relative font-bold text-center z-10 mb-8">Event Timeline</h2>
-      <div className="relative w-full max-w-md">
-        <div className="absolute left-5 top-0 h-4/5 w-1 bg-[#ff7300] rounded"></div>
-        {timelineData.map((event, index) => (
-          <div
-            key={index}
-            id="timeline-item"
-            className="relative pl-10 pb-10 opacity-0"
-          >
-            <div className="absolute left-3 top-1 w-6 h-6 flex items-center justify-center bg-[#ff7300] text-white rounded-full shadow-md">
-              <FaCheckCircle className="text-lg" />
+        <h2 className="text-3xl relative font-bold text-center z-10 mb-8">Event Timeline</h2>
+        <div className="relative w-full max-w-md">
+          <div className="absolute left-5 top-0 h-4/5 w-1 bg-[#ff7300] rounded"></div>
+          {timelineData.map((event, index) => (
+            <div
+              key={index}
+              id="timeline-item"
+              className="relative pl-10 pb-10 opacity-0"
+            >
+              <div className="absolute left-3 top-1 w-6 h-6 flex items-center justify-center bg-[#ff7300] text-white rounded-full shadow-md">
+                <FaCheckCircle className="text-lg" />
+              </div>
+              <p className="text-gray-100 text-sm">{event.date}</p>
+              <h3 className="text-lg text-[#deb100] font-semibold">{event.title}</h3>
+              <p className="text-[#ffedd5] font-Doto font-bold">{event.description}</p>
             </div>
-            <p className="text-gray-100 text-sm">{event.date}</p>
-            <h3 className="text-lg text-[#deb100] font-semibold">{event.title}</h3>
-            <p className="text-[#ffedd5]">{event.description}</p>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
       </div>
 
     </div>

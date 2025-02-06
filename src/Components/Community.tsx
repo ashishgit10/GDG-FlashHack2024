@@ -19,7 +19,7 @@ const Community: React.FC = () => {
 
 
                         <h2 className="text-4xl text-center font-bold mb-12 comic-text text-yellow-100">
-                            Join Our Community
+                            Stay Updated
                         </h2>
                         <div className="flex justify-center gap-6 mb-12">
                             {[
