@@ -1,41 +1,47 @@
-
+import { useState, useEffect } from 'react';
 import Faq from './Faq';
-
 import About from './Components/About';
 import Timeline from './Components/Timeline';
-import Judging from './Components/Judging';
 import Community from './Components/Community';
 import Landingpage from './Components/Landingpage';
-
-
+import Loader from './Components/loader';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
   return (
-    <div className=" bg-black text-white">
-      {/* Hero Section */}
-      <Landingpage />
+    <div className="text-white">
 
-      {/* About Section */}
-      <section>
-        <About />
-      </section>
+      {isLoading && <Loader />}
 
-      {/* Timeline Section */}
+      {/* Main content */}
+      {!isLoading && (
+        <>
+          {/* Hero Section */}
+          <Landingpage />
 
-      <div>
-        <Timeline />
-      </div>
+          {/* About Section */}
+          <section>
+            <About />
+          </section>
 
-      {/* Judging Criteria */}
-      <Judging />
+          {/* Timeline Section */}
+          <Timeline />
 
-      {/* FAQ Section */}
+          {/* FAQ Section */}
+          <Faq />
 
-      <Faq />
-
-      {/* Community Section */}
-      <Community />
-
+          {/* Community Section */}
+          <Community />
+        </>
+      )}
     </div>
   );
 }

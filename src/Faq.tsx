@@ -27,7 +27,7 @@ function Faq() {
         );
     };
     return (
-        <div>
+        <div className='bg-black'>
             <section className="py-20 relative overflow-hidden">
                 <div className="absolute inset-0 electric-grid opacity-30" />
                 <div className="container mx-auto px-4 relative">

@@ -5,7 +5,7 @@ import {
 } from 'lucide-react';
 const About: React.FC = () => {
     return (
-        <div>   <section className="py-20 bg-black/30 relative overflow-hidden">
+        <div>   <section className="py-20 bg-black relative overflow-hidden">
             <div className="absolute inset-0 speed-lines opacity-50" />
             <div className="container mx-auto px-4 relative">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -31,7 +31,7 @@ const About: React.FC = () => {
                     </div>
                     <div className="relative">
                         <img
-                            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80"
+                            src=""
                             alt="AI Technology"
                             className="rounded-lg shadow-2xl"
                         />

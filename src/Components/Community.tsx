@@ -10,7 +10,7 @@ import {
 import FooterBg from '../../assets/FooterBg.svg'
 const Community: React.FC = () => {
     return (
-        <div>
+        <div className='bg-black'>
             <section className="md:pt-20 w-full">
 
                 <div className="md:min-h-[70vh] relative px-4 flex justify-center items-center ">
@@ -18,7 +18,7 @@ const Community: React.FC = () => {
                     <div className='relative pb-10 z-10'>
 
 
-                        <h2 className="text-4xl font-bold mb-12 comic-text text-yellow-100">
+                        <h2 className="text-4xl text-center font-bold mb-12 comic-text text-yellow-100">
                             Join Our Community
                         </h2>
                         <div className="flex justify-center gap-6 mb-12">

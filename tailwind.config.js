@@ -8,8 +8,11 @@ export default {
         Doto: ["Doto", "sans-serif"],
         Smooch: ["Smooch Sans"],
         Chivo: ["Chivo"],
-
       },
+      backgroundPosition: {
+        initial: 'initial',
+      },
+
     },
   },
   plugins: [],
