@@ -3,7 +3,7 @@ import {
     Brain,
     Clock,
 } from 'lucide-react';
-import gif from "../../assets/hackathon.gif"
+import gif from "../assets/hackathon.gif"
 
 const About: React.FC = () => {
     return (

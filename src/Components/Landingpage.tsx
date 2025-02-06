@@ -1,7 +1,7 @@
 import React from 'react'
-import bgImage from "../../assets/BgTx.svg";
+import bgImage from "../assets/BgTx.svg";
 import FlickerText from '../FlickerText';
-import bgball from "../../assets/bgball.svg";
+import bgball from "../assets/bgball.svg";
 
 import CounterTimer from '../CountdownTimer';
 const Landingpage: React.FC = () => {
