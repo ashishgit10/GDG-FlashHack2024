@@ -40,14 +40,14 @@ background-color: black;
 
   .glitch:before {
     animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
-    color: #ff8b00; /* Updated color */
+    color: #ff8b00; 
     z-index: -1;
   }
 
   .glitch:after {
     animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
       infinite;
-    color: #57e500; /* Updated color */
+    color: #57e500;
     z-index: -2;
   }
 

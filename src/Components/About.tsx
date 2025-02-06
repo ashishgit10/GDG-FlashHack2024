@@ -3,6 +3,8 @@ import {
     Brain,
     Clock,
 } from 'lucide-react';
+import gif from "../../assets/hackathon.gif"
+
 const About: React.FC = () => {
     return (
         <div>   <section className="py-20 bg-black relative overflow-hidden">
@@ -31,7 +33,7 @@ const About: React.FC = () => {
                     </div>
                     <div className="relative">
                         <img
-                            src=""
+                            srcSet={gif}
                             alt="AI Technology"
                             className="rounded-lg shadow-2xl"
                         />

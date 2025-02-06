@@ -15,7 +15,7 @@ const Landingpage: React.FC = () => {
                 <div className="max-w-4xl mx-auto text-center">
                     <div className="mt-20">
                         <div className="border py-1 inline-block px-5 md:px-8 rounded-xl">
-                            <div className="font-Smooch text-xl md:text-2xl">GDG - RCET</div>
+                            <div className="font-Smooch text-xl md:text-2xl">GDG x RCET</div>
                         </div>
                     </div>
                     <div className="flex items-center justify-center gap-2 mb-6">
@@ -27,7 +27,7 @@ const Landingpage: React.FC = () => {
                         Think Fast. Build Faster.
                     </p>
                     <p className="md:text-4xl text-2xl mt-6 font-Smooch font-bold md:mb-12 text-black">
-                    3 Hour Rapid Development Hackathon
+                        3 Hour Rapid Development Hackathon
                     </p>
                     <CounterTimer />
                     <div className="flex pt-8 gap-4 flex-col md:flex-row justify-center items-center pb-12 md:mt-12">

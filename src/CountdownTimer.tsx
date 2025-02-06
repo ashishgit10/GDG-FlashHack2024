@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import FlipNumbers from 'react-flip-numbers';
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
-// Global style to target the inner span elements of FlipNumbers
+
 const GlobalStyle = createGlobalStyle`
   .flip-numbers span {
-    font-weight: bold !important; /* Override the default font-weight */
+    font-weight: bold !important; 
   }
 `;
 
@@ -18,15 +18,14 @@ const CountdownTimer: React.FC = () => {
   });
 
   useEffect(() => {
-    // Set target date to 15th February 2025
-    const targetDate = new Date('2025-02-15T00:00:00'); // 15th Feb 2025, 00:00 AM
+    const targetDate = new Date('2025-02-15T00:00:00');
 
     const interval = setInterval(() => {
       const now = new Date();
       const difference = targetDate.getTime() - now.getTime();
 
       if (difference <= 0) {
-        clearInterval(interval); // Stop the timer when countdown is finished
+        clearInterval(interval);
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       } else {
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));
@@ -38,7 +37,7 @@ const CountdownTimer: React.FC = () => {
       }
     }, 1000);
 
-    return () => clearInterval(interval); // Cleanup interval on unmount
+    return () => clearInterval(interval);
   }, []);
 
   return (
