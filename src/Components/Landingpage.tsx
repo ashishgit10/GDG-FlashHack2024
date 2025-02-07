@@ -50,7 +50,7 @@ const Landingpage: React.FC = () => {
                     <CounterTimer />
                     <div className="flex pt-8 gap-4 flex-col md:flex-row justify-center items-center pb-12 md:mt-12">
                         <a
-                            href="https://flashhack.devfolio.co"
+                            href="https://tally.so/r/3lY9p5"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="md:px-8 md:py-4 px-4 py-2 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full font-bold text-md md:text-lg transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(249,115,22,0.5)] glow-effect"

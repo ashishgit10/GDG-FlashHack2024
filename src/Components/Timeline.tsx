@@ -2,14 +2,27 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaCheckCircle } from "react-icons/fa";
-import tm from "../assets/tm.svg"
+import tm from "../assets/tm.svg";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const timelineData = [
   {
     date: "6th Feb",
     title: "Registration Opens",
-    description: "Teams can start registering via Devfolio.",
+    description: (
+      <>
+        Teams can start registering, for more detail visit this{" "}
+        <a
+          href="https://tally.so/r/3lY9p5" // Replace with actual registration link
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#ff7300] underline"
+        >
+          Link
+        </a>.
+      </>
+    ),
   },
   {
     date: "11th Feb",
@@ -38,7 +51,7 @@ const Timeline = () => {
 
   useEffect(() => {
     gsap.fromTo(
-      "#timeline-item",
+      ".timeline-item",
       { opacity: 0, y: 50 },
       {
         opacity: 1,
@@ -56,17 +69,15 @@ const Timeline = () => {
 
   return (
     <div ref={timelineRef} className="flex bg-black relative flex-col items-center md:py-10 pt-10 pb-5">
-      <div className="absolute inset-0 bg-cover bg-center md:bg-initial " style={{ backgroundImage: `url(${tm})` }} />
+      <div className="absolute inset-0 bg-cover bg-center md:bg-initial" style={{ backgroundImage: `url(${tm})` }} />
       <div className="mt-14">
-
         <h2 className="text-3xl relative font-bold text-center z-10 mb-8">Event Timeline</h2>
         <div className="relative w-full max-w-md">
           <div className="absolute left-5 top-0 h-4/5 w-1 bg-[#ff7300] rounded"></div>
           {timelineData.map((event, index) => (
             <div
               key={index}
-              id="timeline-item"
-              className="relative pl-10 pb-10 opacity-0"
+              className="timeline-item relative pl-10 pb-10 opacity-0"
             >
               <div className="absolute left-3 top-1 w-6 h-6 flex items-center justify-center bg-[#ff7300] text-white rounded-full shadow-md">
                 <FaCheckCircle className="text-lg" />
@@ -78,7 +89,6 @@ const Timeline = () => {
           ))}
         </div>
       </div>
-
     </div>
   );
 };
