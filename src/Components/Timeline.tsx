@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaCheckCircle } from "react-icons/fa";
-import tm from "../assets/tm.svg";
+import tmbg from "/tmbg.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -69,7 +69,7 @@ const Timeline = () => {
 
   return (
     <div ref={timelineRef} className="flex bg-black relative flex-col items-center md:py-10 pt-10 pb-5">
-      <div className="absolute inset-0 bg-cover bg-center md:bg-initial" style={{ backgroundImage: `url(${tm})` }} />
+      <div className="absolute inset-0 bg-cover bg-center md:bg-initial" style={{ backgroundImage: `url(${tmbg})` }} />
       <div className="mt-14">
         <h2 className="text-3xl relative font-bold text-center z-10 mb-8">Event Timeline</h2>
         <div className="relative w-full max-w-md">
