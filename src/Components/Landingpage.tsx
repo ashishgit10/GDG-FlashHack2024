@@ -13,9 +13,27 @@ const Landingpage: React.FC = () => {
             <div className="absolute inset-0 speed-lines" />
             <div className="container mx-auto px-4 relative z-10">
                 <div className="max-w-4xl mx-auto text-center">
-                    <div className="mt-20">
+                    <div className="mt-20 flex flex-col items-center">
+                        {/* Green Dot in the Middle with Pulsating Effect */}
+
+
+                        <div className="py-1 inline-block px-5 md:px-8 rounded-xl mt-4">
+                            <div className="font-Smooch text-xl md:text-2xl flex items-center">
+                                {/* Green Dot Before the Text with Pulsating Effect */}
+                                <div className="relative flex justify-start items-center">
+                                    <span className="absolute inline-block -left-1 w-4 h-4 bg-green-500 rounded-full animate-ping"></span>
+                                    <span className="relative inline-block w-3 h-3 bg-green-500 rounded-full"></span>
+                                </div>
+                                <span className='pl-2'>
+                                Registration is live
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="mt-2">
                         <div className="border py-1 inline-block px-5 md:px-8 rounded-xl">
-                            <div className="font-Smooch text-xl md:text-2xl">GDG x RCET</div>
+                            <div className="font-Smooch text-xl md:text-2xl font-bold">GDG x RCET</div>
                         </div>
                     </div>
                     <div className="flex items-center justify-center gap-2 mb-6">

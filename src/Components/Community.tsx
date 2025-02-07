@@ -16,9 +16,10 @@ const Community: React.FC = () => {
                     <div className='relative pb-10 z-10'>
 
 
-                        <h2 className="text-4xl text-center font-bold mb-12 comic-text text-yellow-100">
+                        <h2 className="text-4xl text-center font-bold  comic-text text-yellow-100">
                             Stay Updated
                         </h2>
+                        <div className='text-center mb-12 mt-4 font-Doto font-bold'><span>Team GDG</span></div>
                         <div className="flex justify-center gap-6 mb-12">
                             {[
                                 { icon: <Linkedin className="w-6 h-6" />, label: 'LinkedIn', href: 'https://www.linkedin.com/company/gdg-rcet/' },
