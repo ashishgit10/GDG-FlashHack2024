@@ -12,14 +12,14 @@ const timelineData = [
     title: "Registration Opens",
     description: (
       <>
-        Teams can start registering via{" "}
+        Teams can start registering, for more detail visit this{" "}
         <a
           href="https://tally.so/r/3lY9p5" // Replace with actual registration link
           target="_blank"
           rel="noopener noreferrer"
           className="text-[#ff7300] underline"
         >
-          Devfolio
+          Link
         </a>.
       </>
     ),
