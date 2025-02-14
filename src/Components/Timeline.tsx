@@ -25,22 +25,22 @@ const timelineData = [
     ),
   },
   {
-    date: "11th Feb",
+    date: "15th Feb",
     title: "Registration Closes",
     description: "Deadline for team registrations.",
   },
   {
-    date: "12th Feb",
+    date: "16th Feb",
     title: "Top Teams Announced",
     description: "Qualified teams are shortlisted and announced.",
   },
   {
-    date: "15th Feb",
+    date: "17th Feb",
     title: "FlashHack Finale Begins",
     description: "Check-in, problem statement reveal, and kickoff!",
   },
   {
-    date: "15th Feb (After 3 Hours)",
+    date: "17th Feb (After 3 Hours)",
     title: "Judging & Winner Announcement",
     description: "Teams submit their projects, followed by judging and winner announcement.",
   },
