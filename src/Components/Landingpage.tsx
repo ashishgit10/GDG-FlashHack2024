@@ -21,11 +21,11 @@ const Landingpage: React.FC = () => {
                             <div className="font-Smooch text-xl md:text-2xl flex items-center">
                                 {/* Green Dot Before the Text with Pulsating Effect */}
                                 <div className="relative flex justify-start items-center">
-                                    <span className="absolute inline-block left-[-2px] w-4 h-4 bg-green-500 rounded-full animate-ping"></span>
-                                    <span className="relative inline-block w-3 h-3 bg-green-500 rounded-full"></span>
+                                    <span className="absolute inline-block left-[-2px] w-4 h-4 bg-red-500 rounded-full animate-ping"></span>
+                                    <span className="relative inline-block w-3 h-3 bg-red-500 rounded-full"></span>
                                 </div>
                                 <span className='pl-2'>
-                                    Registration is live
+                                    Registration is closed
                                 </span>
                             </div>
                         </div>
